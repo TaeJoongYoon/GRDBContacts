@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F09D07F2AAF1A6300253D40 /* GRDBContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D07E2AAF1A6300253D40 /* GRDBContactsTests.swift */; };
+		2F09D0A72AAF1AB100253D40 /* GRDBContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0992AAF1AB100253D40 /* GRDBContactsApp.swift */; };
+		2F09D0A82AAF1AB200253D40 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D09B2AAF1AB100253D40 /* Contact.swift */; };
+		2F09D0A92AAF1AB200253D40 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D09D2AAF1AB100253D40 /* ContactListView.swift */; };
+		2F09D0AA2AAF1AB200253D40 /* ContactAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D09E2AAF1AB100253D40 /* ContactAddView.swift */; };
+		2F09D0AB2AAF1AB200253D40 /* ContactDatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0A02AAF1AB100253D40 /* ContactDatabaseProtocol.swift */; };
+		2F09D0AC2AAF1AB200253D40 /* ContactDatabase+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0A12AAF1AB100253D40 /* ContactDatabase+Error.swift */; };
+		2F09D0AD2AAF1AB200253D40 /* ContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0A22AAF1AB100253D40 /* ContactDatabase.swift */; };
+		2F09D0AE2AAF1AB200253D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F09D0A42AAF1AB100253D40 /* Assets.xcassets */; };
+		2F09D0AF2AAF1AB200253D40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F09D0A62AAF1AB100253D40 /* Preview Assets.xcassets */; };
+		2F09D0B22AAF1AEF00253D40 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 2F09D0B12AAF1AEF00253D40 /* GRDB */; };
+		2F09D0B52AAF1B1100253D40 /* GRDBContactsTests+CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0B32AAF1B1100253D40 /* GRDBContactsTests+CRUD.swift */; };
+		2F09D0B62AAF1B1100253D40 /* FakeContactDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09D0B42AAF1B1100253D40 /* FakeContactDatabase.swift */; };
+		2F09D0BC2AAF1C9500253D40 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 2F09D0BB2AAF1C9500253D40 /* CSQLite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F09D07B2AAF1A6300253D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F09D0622AAF1A6200253D40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F09D0692AAF1A6200253D40;
+			remoteInfo = GRDBContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F09D06A2AAF1A6200253D40 /* GRDBContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F09D07A2AAF1A6300253D40 /* GRDBContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRDBContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F09D07E2AAF1A6300253D40 /* GRDBContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBContactsTests.swift; sourceTree = "<group>"; };
+		2F09D0992AAF1AB100253D40 /* GRDBContactsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRDBContactsApp.swift; sourceTree = "<group>"; };
+		2F09D09B2AAF1AB100253D40 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		2F09D09D2AAF1AB100253D40 /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		2F09D09E2AAF1AB100253D40 /* ContactAddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAddView.swift; sourceTree = "<group>"; };
+		2F09D0A02AAF1AB100253D40 /* ContactDatabaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabaseProtocol.swift; sourceTree = "<group>"; };
+		2F09D0A12AAF1AB100253D40 /* ContactDatabase+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContactDatabase+Error.swift"; sourceTree = "<group>"; };
+		2F09D0A22AAF1AB100253D40 /* ContactDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDatabase.swift; sourceTree = "<group>"; };
+		2F09D0A42AAF1AB100253D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F09D0A62AAF1AB100253D40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F09D0B32AAF1B1100253D40 /* GRDBContactsTests+CRUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GRDBContactsTests+CRUD.swift"; sourceTree = "<group>"; };
+		2F09D0B42AAF1B1100253D40 /* FakeContactDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeContactDatabase.swift; sourceTree = "<group>"; };
+		2F09D0BA2AAF1B5F00253D40 /* GRDBContacts.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRDBContacts.xctestplan; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F09D0672AAF1A6200253D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09D0B22AAF1AEF00253D40 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09D0772AAF1A6300253D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09D0BC2AAF1C9500253D40 /* CSQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F09D0612AAF1A6200253D40 = {
+			isa = PBXGroup;
+			children = (
+				2F09D0BA2AAF1B5F00253D40 /* GRDBContacts.xctestplan */,
+				2F09D06C2AAF1A6200253D40 /* GRDBContacts */,
+				2F09D07D2AAF1A6300253D40 /* GRDBContactsTests */,
+				2F09D06B2AAF1A6200253D40 /* Products */,
+				2F09D0B72AAF1B2D00253D40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F09D06B2AAF1A6200253D40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D06A2AAF1A6200253D40 /* GRDBContacts.app */,
+				2F09D07A2AAF1A6300253D40 /* GRDBContactsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F09D06C2AAF1A6200253D40 /* GRDBContacts */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0A32AAF1AB100253D40 /* Resources */,
+				2F09D0972AAF1AB100253D40 /* Sources */,
+			);
+			path = GRDBContacts;
+			sourceTree = "<group>";
+		};
+		2F09D07D2AAF1A6300253D40 /* GRDBContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0B42AAF1B1100253D40 /* FakeContactDatabase.swift */,
+				2F09D0B32AAF1B1100253D40 /* GRDBContactsTests+CRUD.swift */,
+				2F09D07E2AAF1A6300253D40 /* GRDBContactsTests.swift */,
+			);
+			path = GRDBContactsTests;
+			sourceTree = "<group>";
+		};
+		2F09D0972AAF1AB100253D40 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0982AAF1AB100253D40 /* App */,
+				2F09D09A2AAF1AB100253D40 /* Model */,
+				2F09D09C2AAF1AB100253D40 /* View */,
+				2F09D09F2AAF1AB100253D40 /* DB */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2F09D0982AAF1AB100253D40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0992AAF1AB100253D40 /* GRDBContactsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F09D09A2AAF1AB100253D40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D09B2AAF1AB100253D40 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F09D09C2AAF1AB100253D40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D09D2AAF1AB100253D40 /* ContactListView.swift */,
+				2F09D09E2AAF1AB100253D40 /* ContactAddView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F09D09F2AAF1AB100253D40 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0A02AAF1AB100253D40 /* ContactDatabaseProtocol.swift */,
+				2F09D0A12AAF1AB100253D40 /* ContactDatabase+Error.swift */,
+				2F09D0A22AAF1AB100253D40 /* ContactDatabase.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		2F09D0A32AAF1AB100253D40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0A42AAF1AB100253D40 /* Assets.xcassets */,
+				2F09D0A52AAF1AB100253D40 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F09D0A52AAF1AB100253D40 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F09D0A62AAF1AB100253D40 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F09D0B72AAF1B2D00253D40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F09D0692AAF1A6200253D40 /* GRDBContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F09D08E2AAF1A6300253D40 /* Build configuration list for PBXNativeTarget "GRDBContacts" */;
+			buildPhases = (
+				2F09D0662AAF1A6200253D40 /* Sources */,
+				2F09D0672AAF1A6200253D40 /* Frameworks */,
+				2F09D0682AAF1A6200253D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRDBContacts;
+			packageProductDependencies = (
+				2F09D0B12AAF1AEF00253D40 /* GRDB */,
+			);
+			productName = GRDBContacts;
+			productReference = 2F09D06A2AAF1A6200253D40 /* GRDBContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F09D0792AAF1A6300253D40 /* GRDBContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F09D0912AAF1A6300253D40 /* Build configuration list for PBXNativeTarget "GRDBContactsTests" */;
+			buildPhases = (
+				2F09D0762AAF1A6300253D40 /* Sources */,
+				2F09D0772AAF1A6300253D40 /* Frameworks */,
+				2F09D0782AAF1A6300253D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F09D07C2AAF1A6300253D40 /* PBXTargetDependency */,
+			);
+			name = GRDBContactsTests;
+			packageProductDependencies = (
+				2F09D0BB2AAF1C9500253D40 /* CSQLite */,
+			);
+			productName = GRDBContactsTests;
+			productReference = 2F09D07A2AAF1A6300253D40 /* GRDBContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F09D0622AAF1A6200253D40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2F09D0692AAF1A6200253D40 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2F09D0792AAF1A6300253D40 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 2F09D0692AAF1A6200253D40;
+					};
+				};
+			};
+			buildConfigurationList = 2F09D0652AAF1A6200253D40 /* Build configuration list for PBXProject "GRDBContacts" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F09D0612AAF1A6200253D40;
+			packageReferences = (
+				2F09D0B02AAF1AEF00253D40 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
+			productRefGroup = 2F09D06B2AAF1A6200253D40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F09D0692AAF1A6200253D40 /* GRDBContacts */,
+				2F09D0792AAF1A6300253D40 /* GRDBContactsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F09D0682AAF1A6200253D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09D0AF2AAF1AB200253D40 /* Preview Assets.xcassets in Resources */,
+				2F09D0AE2AAF1AB200253D40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09D0782AAF1A6300253D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F09D0662AAF1A6200253D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09D0A92AAF1AB200253D40 /* ContactListView.swift in Sources */,
+				2F09D0A82AAF1AB200253D40 /* Contact.swift in Sources */,
+				2F09D0A72AAF1AB100253D40 /* GRDBContactsApp.swift in Sources */,
+				2F09D0AB2AAF1AB200253D40 /* ContactDatabaseProtocol.swift in Sources */,
+				2F09D0AC2AAF1AB200253D40 /* ContactDatabase+Error.swift in Sources */,
+				2F09D0AA2AAF1AB200253D40 /* ContactAddView.swift in Sources */,
+				2F09D0AD2AAF1AB200253D40 /* ContactDatabase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F09D0762AAF1A6300253D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F09D07F2AAF1A6300253D40 /* GRDBContactsTests.swift in Sources */,
+				2F09D0B62AAF1B1100253D40 /* FakeContactDatabase.swift in Sources */,
+				2F09D0B52AAF1B1100253D40 /* GRDBContactsTests+CRUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F09D07C2AAF1A6300253D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F09D0692AAF1A6200253D40 /* GRDBContacts */;
+			targetProxy = 2F09D07B2AAF1A6300253D40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F09D08C2AAF1A6300253D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F09D08D2AAF1A6300253D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F09D08F2AAF1A6300253D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GRDBContacts/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yntj.GRDBContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F09D0902AAF1A6300253D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GRDBContacts/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yntj.GRDBContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F09D0922AAF1A6300253D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yntj.GRDBContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GRDBContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GRDBContacts";
+			};
+			name = Debug;
+		};
+		2F09D0932AAF1A6300253D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yntj.GRDBContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GRDBContacts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GRDBContacts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F09D0652AAF1A6200253D40 /* Build configuration list for PBXProject "GRDBContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F09D08C2AAF1A6300253D40 /* Debug */,
+				2F09D08D2AAF1A6300253D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F09D08E2AAF1A6300253D40 /* Build configuration list for PBXNativeTarget "GRDBContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F09D08F2AAF1A6300253D40 /* Debug */,
+				2F09D0902AAF1A6300253D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F09D0912AAF1A6300253D40 /* Build configuration list for PBXNativeTarget "GRDBContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F09D0922AAF1A6300253D40 /* Debug */,
+				2F09D0932AAF1A6300253D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F09D0B02AAF1AEF00253D40 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F09D0B12AAF1AEF00253D40 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F09D0B02AAF1AEF00253D40 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		2F09D0BB2AAF1C9500253D40 /* CSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F09D0B02AAF1AEF00253D40 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = CSQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F09D0622AAF1A6200253D40 /* Project object */;
+}
